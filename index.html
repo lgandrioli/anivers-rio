@@ -38,21 +38,24 @@
         }
 
         .carousel {
-            position: relative;
-            justify-self: center;
-            width: 400px;
-            min-height: 500px;
-            overflow: hidden;
-            border-radius: 10px;
-        }
+    width: 100%;
+    max-width: 400px;
+    min-height: auto;
+}
 
-        .carousel img {
-            width: 400px;
-            max-height: 500px;
-            height: auto;
-            display: none;
-            transition: opacity 0.5s ease-in-out;
-        }
+.carousel img {
+    width: 100%;
+    min-height: 500px;
+    max-height: 500px;
+    object-fit: contain;
+    display: none;
+}
+
+@media (max-width: 500px) {
+    .carousel {
+        max-width: 100%;
+    }
+}
 
         .carousel img.active {
             display: block;
@@ -89,7 +92,7 @@
         <h2>🎶 Nossa Música 🎶</h2>
         <p>Essa música sempre me faz lembrar de você e dos nossos momentos juntos. Espero que goste! 💕</p>
         <audio controls>
-            <source src="./audio/y2mate.com - Elvis Presley  Cant Help Falling in Love Lyrics_1080.mp4" type="audio/mpeg">
+            <source src="/audio/y2mate.com - Elvis Presley  Cant Help Falling in Love Lyrics_1080.mp4" type="audio/mpeg">
             Seu navegador não suporta o elemento de áudio.
         </audio>
     </section>
@@ -106,16 +109,16 @@
                 aproveitar com você aquele momento juntos,os pequenos passeios que tivemos,lugares que conhecemos,fotos
                 que tiramos,beijos que damos e até os perrengues que passamos.</p>
             <div class="carousel" id="carousel1">
-                <img src="./photos/arco.jpg" alt="Nossa primeira viagem" class="active">
-                <img src="./photos/farol.jpg" alt="Nossa primeira viagem">
-                <img src="./photos/arco2.jpg" alt="Nossa primeira viagem">
-                <img src="./photos/casa.jpg" alt="Nossa primeira viagem">
-                <img src="./photos/coco.jpg" alt="Nossa primeira viagem">
-                <img src="./photos/farol.jpg" alt="Nossa primeira viagem">
-                <img src="./photos/ponte.jpg" alt="Nossa primeira viagem">
-                <img src="./photos/oculos.jpg" alt="Nossa primeira viagem">
-                <img src="./photos/praia1.jpg" alt="Nossa primeira viagem">
-                <img src="./photos/praia2.jpg" alt="Nossa primeira viagem">
+                <img src="/photos/arco.jpg" alt="Nossa primeira viagem" class="active">
+                <img src="/photos/farol.jpg" alt="Nossa primeira viagem">
+                <img src="/photos/arco2.jpg" alt="Nossa primeira viagem">
+                <img src="/photos/casa.jpg" alt="Nossa primeira viagem">
+                <img src="/photos/coco.jpg" alt="Nossa primeira viagem">
+                <img src="/photos/farol.jpg" alt="Nossa primeira viagem">
+                <img src="/photos/ponte.jpg" alt="Nossa primeira viagem">
+                <img src="/photos/oculos.jpg" alt="Nossa primeira viagem">
+                <img src="/photos/praia1.jpg" alt="Nossa primeira viagem">
+                <img src="/photos/praia2.jpg" alt="Nossa primeira viagem">
             </div>
             <div class="carousel-buttons">
                 <button onclick="prevSlide('carousel1')">&#10094; Anterior</button>
@@ -138,16 +141,16 @@
                 sensacão de te ver pela primeira vez,da nossa primeira conversa,da primeira vez que demos as mãos,do nosso primeiro beijo,do primeiro eu te amo e de como você me faz
                 feliz.</p>
             <div class="carousel" id="carousel2">
-                <img src="./photos/alianças.jpg" class="active">
-                <img src="./photos/carrossel1.jpg">
-                <img src="./photos/roda gigante.jpg">
-                <img src="./photos/bruxos.jpg">
-                <img src="./photos/bruxos2.jpg">
-                <img src="./photos/mapa.jpg">
-                <img src="./photos/nós.jpg">
-                <img src="./photos/nos2.jpg">
-                <img src="./photos/nos3.jpg">
-                <img src="./photos/nos4.jpg">
+                <img src="/photos/alianças.jpg" class="active">
+                <img src="/photos/carrossel1.jpg">
+                <img src="/photos/roda gigante.jpg">
+                <img src="/photos/bruxos.jpg">
+                <img src="/photos/bruxos2.jpg">
+                <img src="/photos/mapa.jpg">
+                <img src="/photos/nós.jpg">
+                <img src="/photos/nos2.jpg">
+                <img src="/photos/nos3.jpg">
+                <img src="/photos/nos4.jpg">
             </div>
             <div class="carousel-buttons">
                 <button onclick="prevSlide('carousel2')">&#10094; Anterior</button>
